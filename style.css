@@ -1,0 +1,113 @@
+* *::before, *::after{
+    box-sizing: border-box;
+    font-family: 'Outfit', sans-serif;
+
+}
+body{
+    font-size: 16px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background: url(/assets/pattern-background-desktop.svg);
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-color: hsl(225, 100%, 94%);
+}
+section{
+    background-color: white;
+    border-radius: 15px;
+}
+section img{
+    width: 100%;
+    border-top-left-radius: 15px;
+    border-top-right-radius: 15px;
+}
+.hero{
+    margin: 20px;
+}
+.hero h1{
+    text-align: center;
+    text-transform: capitalize;
+}
+.hero p{
+
+    text-align: center;
+    font-size: 15px;
+    color:hsl(224, 23%, 55%) ;
+}
+.plan-box{
+    display: flex;
+    min-height: 20%;
+    align-items: center;
+    justify-content: space-around;
+    background-color:  hsl(225, 100%, 98%);
+    border-radius: 10px;
+}
+.plan-box button{
+    border: none;
+    background-color: transparent;
+    color: hsl(245, 75%, 52%);
+}
+.plan-box button:hover{
+    cursor: pointer;
+}
+.icon-box{
+    margin: 0;
+    display: flex;
+    align-items: center;
+}
+.text-box{
+      margin-left: 10px;
+      align-items: center;
+}
+
+.btn{
+    padding: 10px 0;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+.btn a{
+    padding: 10px 140px;
+    text-decoration: none;
+    color: white;
+   background-color: hsl(245, 75%, 52%);
+   border: none;
+   border-radius: 10px;
+   box-shadow: 1px 10px 5px hsl(245deg 75% 52% / 8%);
+}
+.btn-2{
+    margin-bottom: 10px ;
+}
+.btn-2 button{
+    Background-color: white;
+    width: 100%;
+    padding: 10px;
+    border: none;
+    color:hsl(224, 23%, 55%) ;
+    text-transform: capitalize;
+    border-radius: 10px;
+}
+.btn a:hover{
+    cursor: pointer;
+    background-color: hsl(224, 23%, 55%);
+}
+.btn-2 button:hover{
+    cursor: pointer;
+}
+
+
+@media screen and (max-width: 375px){
+    
+Body{
+        background: url(/assets/pattern-background-mobile.svg);
+        background-repeat: no-repeat;
+        background-color:hsl(225, 100%, 94%) ;
+    }
+.btn a{
+    padding: 10px 68px;
+    margin: 0;
+    
+}
+
+}
